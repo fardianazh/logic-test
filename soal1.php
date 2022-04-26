@@ -7,18 +7,16 @@
     <title>Soal 1</title>
 </head>
 <body>
-<form>
-    <div>
-            <label>Nama</label> <br>
-            <input name="nama" type="text" placeholder="Masukkan nama">
-        </div>
-        <div>
-            <label>Alamat</label> <br>
-            <input name="alamat" type="text" placeholder="Masukkan alamat">
-        </div>
-        <div>
-            <button>Submit</button>
-        </div>
-    </form>
+    <script>
+        var totalBelanja = prompt("Masukan Angka");
+
+        if(totalBelanja == 4){
+            document.write(4*3*2*1);
+        } else if (totalBelanja == 8){
+            document.write(8*7*6*5*4*3*2*1); 
+        } else {
+            document.write("<p> pilih 4 atau 8 </p>");
+        }
+    </script>
 </body>
 </html>
