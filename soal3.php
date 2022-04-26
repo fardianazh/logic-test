@@ -7,15 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-<form action="" method="post">
-        <input type="text" name="number1">
-        <input type="text" name="number2">
-        <input type="submit" value="Submit">
-</form>
 </body>
 <?php
-    $kalimat = $_POST['kalimat'];
-    $
+    $string = "9.86-A5.321";
+    $result = preg_replace("/[^0-9]/", "", $string);
+    echo $result."<br>";
 
+    $array = str_split($result);
+    $array_count = count($array);
+
+    $zero = $array_count;
+    for($a=0; $a<$zero; $a++){
+        echo $array[$a];
+          for($c=$zero-1; $c > $a; $c-=1){
+                 echo "0";
+          }
+           echo "<br>";
+     }
 ?>
 </html>
