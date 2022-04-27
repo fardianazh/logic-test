@@ -7,16 +7,20 @@
     <title>Soal 1</title>
 </head>
 <body>
-    <script>
-        var totalBelanja = prompt("Masukan Angka");
-
-        if(totalBelanja == 4){
-            document.write(4*3*2*1);
-        } else if (totalBelanja == 8){
-            document.write(8*7*6*5*4*3*2*1); 
-        } else {
-            document.write("<p> pilih 4 atau 8 </p>");
-        }
-    </script>
+<form action="" method="post">
+        <input type="numeric" name="number1">
+        <input type="submit" value="Submit">
+</form>
 </body>
+<?php
+    $number1 = $_POST['number1'];
+    $kali = 1;
+    for ($i = $number1; $i>= 1; $i-=1)
+    {
+        $kali*=$i;
+    }
+    
+    echo $kali;
+
+?>
 </html>
